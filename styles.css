@@ -1,0 +1,89 @@
+.body {
+  margin: 0;
+}
+
+.wrapper{
+  margin: auto;
+  background: top  right no-repeat url(img/Background.png);
+  background-size: cover;
+}
+
+.menu__title{
+	font: 700 57px/63px 'Roboto', sans-serif, arial, helvetica;
+	    margin: 30px 0 0px 0px;
+      color: #FFFFFF;
+}
+
+.menu__subtitle{
+  font: 700 19px/22px 'Roboto', sans-serif, arial, helvetica;
+  margin: 9px 0px 36px 2px;
+  color: #FFFFFF;
+}
+.menu{
+  font: 400 50px/59px 'Roboto', sans-serif, arial, helvetica;
+  background: top 35vw right 62px no-repeat url(img/cards.png);
+color: #FFFFFF;
+        padding: 103px 103px 256px;
+}
+.menu__list {
+    margin: 62px 51px;
+}
+
+.menu__list_item{
+    position: relative;
+    cursor: pointer;
+    font: 50px/59px 'Roboto', sans-serif, arial, helvetica;
+    font-weight: 700;
+    margin-bottom: 24px;
+    transition: color 1s;
+}
+.menu__list :hover{
+  color: #D62B2E ;
+}
+.menu__list_easy.active {
+  position: relative;
+}
+
+.menu__list_easy.active::before {
+  position: absolute;
+  content: url(img/figure.png);
+  margin-left: -49px;
+  margin-top: -5px;
+}
+.menu__list_middle.active {
+  position: relative;
+}
+
+.menu__list_middle.active::before {
+  position: absolute;
+  content: url(img/figure.png);
+  margin-left: -49px;
+  margin-top: -5px;
+}
+
+.menu__list_hard.active {
+  position: relative;
+}
+
+.menu__list_hard.active::before {
+  position: absolute;
+  content: url(img/figure.png);
+  margin-left: -49px;
+  margin-top: -5px;
+}
+.menu__list_button{
+  font: 700 32px/37px 'Roboto', sans-serif, arial, helvetica;
+  display: inline-block;
+  color: #FFFFFF;
+  background:#D62B2E;
+  padding: 30px 85px;
+      text-decoration: none;
+      margin: 50px 0;
+
+}
+.menu__list_button:hover{
+   transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+
+}
