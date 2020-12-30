@@ -14,6 +14,8 @@
     <div class="menu">
          <h1 class="menu__title"> Выберите уровень сложности: </h1>
          <p class="menu__subtitle">Выберите сложность и игра начнется. Чем выше уровень - тем больше будет выборка карт.</p>
+         <div class="menu__flex">
+
          <div class="menu__list">
          <div class="menu__list_easy menu__list_item active" data-level="3">
               Простой
@@ -24,9 +26,11 @@
             <div class="menu__list_hard menu__list_item" data-level="9">
               Сложный
             </div>
+              <a class="menu__list_button" href="#">Начать игру</a>
               </div>
-          <a class="menu__list_button" href="#">Начать игру</a>
+
      </div>
+   </div>
      <div class="game-page off">
        <div class="game-page__levels off">
        </div>
@@ -34,7 +38,8 @@
      <div class="hidden-page off">
        <img src="img/game-card.png" alt="picture" class="levels__item">
      </div>
+      </div>
    <script src="script.js"></script>
- </div>
+
 </body>
 </html>

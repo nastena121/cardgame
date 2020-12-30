@@ -1,5 +1,7 @@
 .body {
   margin: 0;
+  background: top  right no-repeat url(img/Background.png);
+  background-size: cover;
 }
 
 .off {
@@ -9,8 +11,18 @@
 .wrapper{
   margin: 0 auto;
   width: 100%;
-  background: top  right no-repeat url(img/Background.png);
-  background-size: cover;
+}
+
+.menu {
+    font: 400 50px/59px 'Roboto', sans-serif, arial, helvetica;
+    background: top 37vw right 21px no-repeat url(img/cards.png);
+    color: #FFFFFF;
+    padding: 103px 103px 256px;
+    box-sizing: border-box;
+}
+
+.menu.off{
+  display: none;
 }
 
 .menu__title{
@@ -24,19 +36,15 @@
   margin: 9px 0px 36px 2px;
   color: #FFFFFF;
 }
-.menu.off{
-  display: none;
+
+.menu__flex {
+  display: flex;
+  justify-content: space-between;
 }
-.menu{
-  font: 400 50px/59px 'Roboto', sans-serif, arial, helvetica;
-  background: top 35vw right 62px no-repeat url(img/cards.png);
-color: #FFFFFF;
-        padding: 103px 103px 256px;
-        box-sizing: border-box;
-}
+
 .menu__list {
 
-    margin: 62px 51px;
+    margin: 26px 51px;
 }
 
 .menu__list_item{
@@ -81,16 +89,18 @@ color: #FFFFFF;
   margin-left: -49px;
   margin-top: -5px;
 }
-.menu__list_button{
-  font: 700 32px/37px 'Roboto', sans-serif, arial, helvetica;
-  display: inline-block;
-  color: #FFFFFF;
-  background:#D62B2E;
-  padding: 30px 85px;
-      text-decoration: none;
-      margin: 50px 0;
 
+.menu__list_button {
+    font: 700 32px/37px 'Roboto', sans-serif, arial, helvetica;
+    display: inline-block;
+    color: #FFFFFF;
+    background: #D62B2E;
+    padding: 30px 85px;
+    text-decoration: none;
+    margin: 88px -51px 22px;
+    transition: ease-in .5s;
 }
+
 .menu__list_button:hover{
    transform: translateY(-3px);
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
