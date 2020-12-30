@@ -157,5 +157,133 @@
 
 .card-bonus.opened {
   transform: none;
-  transiton: none;
+
+}
+@media (max-width:1024px) {
+  .menu {
+    background: top 56vw right 3px no-repeat url(img/cards.png);
+      background-size: 48%;
+  }
+
+  .game-page__levels {
+    display: grid;
+    grid-template-columns: 215px 215px 215px;
+    grid-gap: 1.2vw;
+    align-content: center;
+}
+.levels__item {
+    width: 197px;
+    height: 281px;
+    transition: translateY .5s, transform .5s;
+}
+}
+@media (max-width:768px) {
+
+  .menu {
+   background-image: none;
+background-size: 47%;
+  }
+
+  .menu__title{
+  	font: 700 57px/63px 'Roboto', sans-serif, arial, helvetica;
+  }
+
+  .menu__subtitle{
+    font: 700 19px/22px 'Roboto', sans-serif, arial, helvetica;
+ }
+ .levels__item {
+    width: 181px;
+    height: 261px;
+    transition: translateY .5s, transform .5s;
+}
+.game-page__levels {
+    display: grid;
+    grid-template-columns: 185px 185px 185px;
+    grid-gap: 1.2vw;
+    align-content: center;
+}
+}
+
+@media (max-width:600px) {
+  .menu__title {
+      font: 700 34px/35px 'Roboto', sans-serif, arial, helvetica;
+      /* text-align: center; */
+  }
+  .menu__subtitle {
+      font: 700 15px/22px 'Roboto', sans-serif, arial, helvetica;
+      /* text-align: center; */
+  }
+  .menu__list_item {
+
+    font: 700 30px/28px 'Roboto', sans-serif, arial, helvetica;
+    margin-bottom: 24px;
+
+}
+.menu__list_button {
+    font: 700 21px/37px 'Roboto', sans-serif, arial, helvetica;
+
+    padding: 12px 67px;
+
+    margin: 32px -51px 22px;
+  }
+
+  .levels__item {
+    width: 165px;
+    height: 251px;
+    transition: translateY .5s, transform .5s;
+}
+.game-page__levels {
+    display: grid;
+    grid-template-columns: 165px 165px 165px;
+    grid-gap: 1.2vw;
+    align-content: center;
+}
+}
+
+  @media (max-width:550px) {
+    .menu {
+      padding: 65px 48px 155px;
+    }
+    .levels__item {
+    width: 131px;
+    height: 191px;
+    transition: translateY .5s, transform .5s;
+}
+.game-page__levels {
+    display: grid;
+    grid-template-columns: 135px 135px 135px;
+    grid-gap: 1.2vw;
+    align-content: center;
+}
+  }
+
+@media (max-width:460px) {
+  .levels__item {
+    width: 115px;
+    height: 171px;
+    transition: translateY .5s, transform .5s;
+}
+.game-page__levels {
+    display: grid;
+    grid-template-columns: 115px 115px 115px;
+    grid-gap: 1.2vw;
+    align-content: center;
+}
+}
+@media (max-width:376px) {
+  .menu {
+        padding: 65px 20px 155px;
+  }
+
+  .levels__item {
+    width: 105px;
+    height: 159px;
+    transition: translateY .5s, transform .5s;
+}
+.game-page__levels {
+    display: grid;
+    grid-template-columns: 105px 105px 105px;
+    grid-gap: 1.2vw;
+    align-content: center;
+}
 }
