@@ -1,11 +1,28 @@
 .body {
   margin: 0;
+  background: top  right no-repeat url(img/Background.png);
+  background-size: cover;
+}
+
+.off {
+  display: none;
 }
 
 .wrapper{
-  margin: auto;
-  background: top  right no-repeat url(img/Background.png);
-  background-size: cover;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.menu {
+    font: 400 50px/59px 'Roboto', sans-serif, arial, helvetica;
+    background: top 37vw right 21px no-repeat url(img/cards.png);
+    color: #FFFFFF;
+    padding: 103px 103px 256px;
+    box-sizing: border-box;
+}
+
+.menu.off{
+  display: none;
 }
 
 .menu__title{
@@ -19,14 +36,15 @@
   margin: 9px 0px 36px 2px;
   color: #FFFFFF;
 }
-.menu{
-  font: 400 50px/59px 'Roboto', sans-serif, arial, helvetica;
-  background: top 35vw right 62px no-repeat url(img/cards.png);
-color: #FFFFFF;
-        padding: 103px 103px 256px;
+
+.menu__flex {
+  display: flex;
+  justify-content: space-between;
 }
+
 .menu__list {
-    margin: 62px 51px;
+
+    margin: 26px 51px;
 }
 
 .menu__list_item{
@@ -71,19 +89,73 @@ color: #FFFFFF;
   margin-left: -49px;
   margin-top: -5px;
 }
-.menu__list_button{
-  font: 700 32px/37px 'Roboto', sans-serif, arial, helvetica;
-  display: inline-block;
-  color: #FFFFFF;
-  background:#D62B2E;
-  padding: 30px 85px;
-      text-decoration: none;
-      margin: 50px 0;
 
+.menu__list_button {
+    font: 700 32px/37px 'Roboto', sans-serif, arial, helvetica;
+    display: inline-block;
+    color: #FFFFFF;
+    background: #D62B2E;
+    padding: 30px 85px;
+    text-decoration: none;
+    margin: 88px -51px 22px;
+    transition: ease-in .5s;
 }
+
 .menu__list_button:hover{
    transform: translateY(-3px);
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
 
+}
+.game-page.off{
+  display: none;
+}
+.game-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.game-page__levels.off {
+  display: none;
+}
+
+.hidden-page.off {
+  display: none;
+}
+
+.game-page__levels {
+  display: grid;
+  grid-template-columns: 215px 215px 215px;
+  grid-gap: 1.2vw;
+  align-content: center;
+}
+
+.levels__item {
+  width: 215px;
+  height: 301px;
+  transition: translateY .5s, transform .5s;
+}
+
+.levels__item:hover {
+  transform: translateY(-38px) rotate(-3deg);
+}
+
+.card-game-over {
+  transform: rotateY(180deg);
+  content: url(img/game-over.png);
+}
+
+.card-game-over.opened {
+  transform: none;
+
+}
+
+.card-bonus {
+  transform: rotateY(180deg);
+  content: url(img/bonus.png);
+}
+
+.card-bonus.opened {
+  transform: none;
+  transiton: none;
 }
