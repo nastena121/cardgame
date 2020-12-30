@@ -2,8 +2,13 @@
   margin: 0;
 }
 
+.off {
+  display: none;
+}
+
 .wrapper{
-  margin: auto;
+  margin: 0 auto;
+  width: 100%;
   background: top  right no-repeat url(img/Background.png);
   background-size: cover;
 }
@@ -19,13 +24,18 @@
   margin: 9px 0px 36px 2px;
   color: #FFFFFF;
 }
+.menu.off{
+  display: none;
+}
 .menu{
   font: 400 50px/59px 'Roboto', sans-serif, arial, helvetica;
   background: top 35vw right 62px no-repeat url(img/cards.png);
 color: #FFFFFF;
         padding: 103px 103px 256px;
+        box-sizing: border-box;
 }
 .menu__list {
+
     margin: 62px 51px;
 }
 
@@ -86,4 +96,56 @@ color: #FFFFFF;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
 
+}
+.game-page.off{
+  display: none;
+}
+.game-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.game-page__levels.off {
+  display: none;
+}
+
+.hidden-page.off {
+  display: none;
+}
+
+.game-page__levels {
+  display: grid;
+  grid-template-columns: 215px 215px 215px;
+  grid-gap: 1.2vw;
+  align-content: center;
+}
+
+.levels__item {
+  width: 215px;
+  height: 301px;
+  transition: translateY .5s, transform .5s;
+}
+
+.levels__item:hover {
+  transform: translateY(-38px) rotate(-3deg);
+}
+
+.card-game-over {
+  transform: rotateY(180deg);
+  content: url(img/game-over.png);
+}
+
+.card-game-over.opened {
+  transform: none;
+
+}
+
+.card-bonus {
+  transform: rotateY(180deg);
+  content: url(img/bonus.png);
+}
+
+.card-bonus.opened {
+  transform: none;
+  transiton: none;
 }
