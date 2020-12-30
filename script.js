@@ -14,7 +14,6 @@ document.querySelector('.menu__list_button').addEventListener('click', function(
   document.querySelector('.game-page__levels').classList.remove('off');
 
   let level = document.querySelector('.active').dataset.level;
-console.log(level);
 setLevel = Number(level);
 
   for (let i=0; i<level; i++) {
@@ -44,7 +43,7 @@ setLevel = Number(level);
 });
 
 function getCards(arrLength) {
-  let arr = Array(arrLength).fill(0);Метод fill()
+  let arr = Array(arrLength).fill(0);
   let rand = Math.floor(Math.random() * arrLength);
   arr[rand] = 1;
 
